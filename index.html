@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIAULHAQ's Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <h1 class="logo">PORTFOLIO</h1>
+        </div>
+        <nav id="navbar">
+            <ul class="nav-links">
+                <li>
+                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+                            <path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                        </svg>
+                    </button>
+                </li>
+                <li><a href="#" class="links active">Home</a></li>
+                <li><a href="#about-content" class="links">About</a></li>
+                <li><a href="#skills" class="links">Skills</a></li>
+                <li><a href="#projects-section" class="links">Projects</a></li>
+                <li><a href="#footer" class="links">Contact</a></li>
+                <li><a href="#" class="links"></a></li>
+                <div class="social-link-ham">
+                    <div class="rhombus"><i class='bx bxl-linkedin'></i></div>
+                    <div class="rhombus"><i class='bx bxl-instagram'></i></div>
+                    <div class="rhombus"><i class='bx bxl-github'></i></div>
+                </div>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <div class="rhombus"><i class='bx bxl-linkedin'></i></div>
+            <div class="rhombus"><i class='bx bxl-instagram'></i></div>
+            <div class="rhombus"><i class='bx bxl-github'></i></div>
+        </div>
+        <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+                <path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+            </svg>
+        </button>
+    </header>
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    <main>
+        <div class="description-container">
+            <h6>Hi, My Name is..</h6>
+            <h2>KHAN ZIAULHAQ</h2>
+            <div class="typewriter">
+                <span id="type-text"></span><span class="cursor">|</span>
+            </div>
+            <p>
+                I have a passion for IT industry. Eager to launch a career where I
+                can apply theoretical knowledge gained through coursework and
+                contribute to innovative projects. Possess strong communication,
+                teamwork, and problem-solving skills, with a keen willingness to
+                learn and adapt. Excited to contribute positively to a dynamic work
+                environment and grow professionally.
+            </p>
+            <button>Download My CV</button>
+        </div>
+    </main>
+
+    <section id="about-content">
+        <div class="about-content">
+            <div class="introduction-section">
+                <h2>Introduction</h2>
+                <p>
+                    Hello! My name is Khan Ziaulhaq, and I am a passionate and motivated fresher in the field of
+                    technology.
+                    I have recently completed my Bachelor of Science in Computer Science. I am eager to
+                    apply my skills,
+                    learn from industry professionals, and contribute to innovative projects.
+
+                    I have a passion for IT industry. Eager to launch a career where I
+                    can apply theoretical knowledge gained through coursework and
+                    contribute to innovative projects. Possess strong communication,
+                    teamwork, and problem-solving skills, with a keen willingness to
+                    learn and adapt. Excited to contribute positively to a dynamic work
+                    environment and grow professionally.
+
+                    In my free time, I love exploring new technologies, working on personal projects, and staying
+                    curious.
+                </p>
+            </div>
+            <div class="education-section">
+                <h2>Education</h2>
+                <div class="education-tree">
+                    <div class="branch">
+                        <span class="year">2026 (Pursuing)</span>
+                        <div class="detail">
+                            <h3>Master of Computer Science</h3>
+                            <p>Smt. Thirumalai College of Science - SIWS College</p>
+                        </div>
+                    </div>
+                    <div class="branch">
+                        <span class="year">2024 (Completed)</span>
+                        <div class="detail">
+                            <h3>Bachelor of Computer Science</h3>
+                            <p>Smt. Thirumalai College of Science - SIWS College</p>
+                        </div>
+                    </div>
+                    <div class="branch">
+                        <span class="year">2021 (Completed)</span>
+                        <div class="detail">
+                            <h3>Higher Secondary Education | 12th (CS)</h3>
+                            <p>M D College of Arts, Science and Commerce, Parel</p>
+                        </div>
+                    </div>
+                    <div class="branch">
+                        <span class="year">2019 (Completed)</span>
+                        <div class="detail">
+                            <h3>Secondary Education | 10th</h3>
+                            <p>Our Lady of Good Counsel High School</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skills">
+            <div class="skills-area">
+                <h3>Front-End Development</h3>
+                <div class="skills-category">
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML Icon">
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/96/css3.png" alt="CSS Icon">
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/96/javascript--v1.png" alt="JavaScript Icon">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/ultraviolet/96/react--v1.png" alt="React Icon">
+                        <span>React</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/96/bootstrap.png" alt="Bootstrap Icon">
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/96/tailwind_css.png" alt="Tailwind Icon">
+                        <span>Tailwind</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/96/figma--v1.png" alt="Figma Icon">
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/96/adobe-photoshop--v1.png" alt="Photoshop Icon">
+                        <span>Photoshop</span>
+                    </div>
+                </div>
+
+                <h3>Back-End Development</h3>
+                <div class="skills-category">
+                    <div class="skill">
+                        <img src="https://img.icons8.com/officel/96/php-logo.png" alt="PHP Icon">
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/96/mysql-logo.png" alt="MySQL Icon">
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <h3>Others</h3>
+                <div class="skills-category">
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/96/git.png" alt="Git Icon">
+                        <span>Git</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/96/wordpress.png" alt="WordPress Icon">
+                        <span>WordPress</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/96/microsoft-office-2019.png" alt="Office Icon">
+                        <span>Office</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-section">
+        <div id="project-carousel">
+            <button id="project-prev" class="arrow-btn">&#9664;</button>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h2>Project 1</h2>
+                    <p>Amazing project description goes here. It explains the features and the technology used.</p>
+                </div>
+                <div class="project-card">
+                    <h2>Project 2</h2>
+                    <p>This project focuses on solving a real-world issue using modern web development.</p>
+                </div>
+                <div class="project-card">
+                    <h2>Project 3</h2>
+                    <p>A detailed explanation of an innovative application or software you built.</p>
+                </div>
+                <div class="project-card">
+                    <h2>Project 4</h2>
+                    <p>Information about how this project stands out and the tools used to create it.</p>
+                </div>
+                <div class="project-card">
+                    <h2>Project 5</h2>
+                    <p>This project showcases advanced problem-solving techniques and creative UI/UX.</p>
+                </div>
+            </div>
+            <button id="project-next" class="arrow-btn">&#9654;</button>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-content">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects-section">Projects</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Contact Me</h3>
+                <form id="contactForm">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <textarea name="message" id="message" placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Khan Ziaulhaq. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
