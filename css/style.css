@@ -67,10 +67,6 @@ header {
     user-select: none;
 }
 
-.logo-container {
-    display: flex;
-    cursor: pointer;
-}
 
 .logo {
     font-family: "Rowdies", serif;
@@ -213,6 +209,7 @@ main {
 }
 
 .description-container button {
+    all: unset;
     background-color: var(--accent-color);
     color: var(--primary-color);
     max-width: 20%;
@@ -221,6 +218,10 @@ main {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s ease;
+}
+
+.description-container button a {
+    all: unset;
 }
 
 .description-container button:hover {
