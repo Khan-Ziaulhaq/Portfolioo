@@ -65,6 +65,7 @@ header {
     top: 0;
     z-index: 100;
     user-select: none;
+    animation: slideFromUp 0.5s ease-in-out 1;
 }
 
 
@@ -80,8 +81,9 @@ header {
 }
 
 nav {
-    backdrop-filter: blur(2px);
-    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 30px;
     padding: 15px 30px;
 }
@@ -192,20 +194,25 @@ main {
     flex-direction: column;
     justify-content: center;
     color: var(--text-color);
+    animation: opacity 1.5s ease-in-out 1;
 }
 
 .description-container h6 {
     font-size: 1.1em;
+
+
 }
 
 .description-container h2 {
     font-size: 3em;
     font-weight: 700;
+
 }
 
 .description-container p {
     font-size: 1em;
     margin-bottom: 3%;
+
 }
 
 .description-container button {
@@ -218,6 +225,7 @@ main {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s ease;
+
 }
 
 .description-container button a {
@@ -235,6 +243,8 @@ main {
     color: var(--accent-color);
     display: flex;
     align-items: center;
+
+
 }
 
 .cursor {
@@ -249,6 +259,9 @@ main {
     display: flex;
     margin: auto;
     align-items: center;
+    animation: fade-in-up ease-in-out forwards;
+    animation-timeline: view(90vh 10vh);
+    opacity: 0;
 }
 
 .education-section,
@@ -355,6 +368,9 @@ main {
     transition: transform 0.3s, box-shadow 0.3s;
     width: 120px;
     height: 120px;
+    animation: fade-in-up ease-in-out forwards;
+    animation-timeline: view(90vh 10vh);
+    opacity: 0;
 }
 
 .skill img {
@@ -390,6 +406,9 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
+    animation: fade-in-up ease-in-out forwards;
+    animation-timeline: view(90vh 10vh);
+    opacity: 0;
 }
 
 .projects-container {
@@ -398,6 +417,7 @@ main {
     width: 80%;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+
 }
 
 .project-card {
@@ -565,11 +585,7 @@ footer {
     font-size: 14px;
 }
 
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
+
 
 @media screen and (max-width: 700px) {
 
@@ -750,5 +766,46 @@ footer {
 
     .footer-bottom {
         font-size: 10px;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideFromUp {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
